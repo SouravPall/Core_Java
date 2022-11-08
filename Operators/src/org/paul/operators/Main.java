@@ -2,8 +2,8 @@ package org.paul.operators;
 
 public class Main {
     public static void main(String[] args) {
-        int a = 2;
-        int b = 9;
+        int a = 1;
+        int b = 2;
 
 
 //        boolean answer = a != b;
@@ -21,14 +21,28 @@ public class Main {
 //        System.out.println(ans);
 
 
-        boolean ans = a >3;
-        if (ans){
-            System.out.println("A is greater than 3");
-        } else {
-            System.out.println("A is less than 3");
+           boolean ans = a >3;
+//        if (ans){
+//            System.out.println("A is greater than 3");
+//        } else {
+//            System.out.println("A is less than 3");
+//        }
+
+        switch (a){
+            case 1:
+                System.out.println("A is One");
+                break;
+            case 2:
+                System.out.println("A is Two");
+                break;
+            case 3:
+                System.out.println("A is Three");
+            default:
+                System.out.println("A is not One, two or three");
+                break;
         }
 
-        //System.out.println("Continue.....");
+        System.out.println("Continue.....");
 
     }
 }
